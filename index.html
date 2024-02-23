@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    
+    <header>Currency Converter</header>
+
+    <div>
+        <div><input id="euro" type="number"> EUR</div>
+    </div>
+
+    <div><input id="usd" type="number"> USD</div>
+    <button onclick="convert()">Convert</button>
+     
+    <footer></footer>
+
+
+<script>
+function convert() {
+    let euroInput = document.getElementById("euro");
+    let usdInput = document.getElementById("usd");
+    
+    let euro = parseFloat(euroInput.value);
+    if (isNaN(euro)) {
+        alert("Please enter a valid number for Euro.");
+        return;
+    }
+    
+    let result = euro * 0.981;
+    usdInput.value = result.toFixed(2); // Round to 2 decimal places
+}
+</script>
+
+</body>
+</html>
