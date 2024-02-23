@@ -4,8 +4,8 @@
     "display": "fullscreen",
     "scope": "/",
     "start_url": "/",
-    "short_name": "CurrencyZ",
     "name": "CurrencyZ",
+    "short_name": "CurrencyZ",
     "icons": [
         {
             "src": "/icon-192x192.png",
